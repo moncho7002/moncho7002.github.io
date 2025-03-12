@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.product {
+    border: 2px solid darkred;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #220000;
+}
+.product img {
+    max-width: 200px;
+}
+button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: red;
+}
