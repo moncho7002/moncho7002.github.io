@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="css/detalles.css">
 </head>
 <body>
+    <script>
+  function playAudio() {
+    const audio = document.getElementById("audo");
+    audio.play().catch(error => console.log("Autoplay bloqueado"));
+    
+    // Remover el evento después de la primera interacción
+    document.removeEventListener("mousemove", playAudio);
+    document.removeEventListener("touchstart", playAudio);
+  }
+
+  // Activar audio al mover el mouse o tocar la pantalla
+  document.addEventListener("mousemove", playAudio);
+  document.addEventListener("touchstart", playAudio);
+</script>
       <audio id="audo" autoplay loop>
         <source  src="imgen/Nirvana - Come As You Are (Official Music Video).mp3" >
     </audio>
