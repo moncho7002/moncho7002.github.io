@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+h1 {
+    font-family: "Metal Mania", system-ui; 
+}
+#callarm {
+    background-color: black;
+    position: fixed;
+            bottom: 20px; /* Distancia desde abajo */
+            right: 20px; /* Distancia desde la derecha */
+            padding: 10px 20px;
+            opacity: 0.7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
+
+#menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu{
+    margin: auto;
+    width: 50px;
+  position: relative;
+  right: 625px;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.prin li a {
+ background-color: darkred; color: white;
+ 
+  text-decoration: none;
+  display: block;
+  padding: 20px 20px;
+}
+.prin li a:hover{
+    background-color: red;
+}
+.prin li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.prin li:hover > ul {
+    display: block;
+}
+
+.prin li ul li {
+    position: relative;
+}
+.prin li ul li ul {
+    right: -140px;
+    top: 0px;
+}
