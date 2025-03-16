@@ -5,27 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEAD WORLD</title>
     <link rel="stylesheet" href="css/detalles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-  function playAudio() {
-    const audio = document.getElementById("audo");
-    audio.play().catch(error => console.log("Autoplay bloqueado"));
-    
-    // Remover el evento después de la primera interacción
-    document.removeEventListener("mousemove", playAudio);
-    document.removeEventListener("touchstart", playAudio);
-  }
-
-  // Activar audio al mover el mouse o tocar la pantalla
-  document.addEventListener("mousemove", playAudio);
-  document.addEventListener("touchstart", playAudio);
-</script>
-      <audio id="audo" autoplay loop>
-        <source  src="imgen/Nirvana - Come As You Are (Official Music Video).mp3" >
-    </audio>
+   
     <header>
-        <img src="imgen/realencave.png" alt="encaves">
+        <img src="imgen/realencave.png" alt="encaves" id="encaves">
     </header>
     <div id="menu">
         <ul class="prin">
@@ -34,7 +21,7 @@
                     <li><a href="">Armas</a>
                         <ul>
                             <li><a href='#pisto'>Pistolas</a></li>
-                            <li  onmouseover="document.getElementById('audo').play()"><a href='#Esco'>Escopetas</a></li>
+                            <li><a href='#Esco'>Escopetas</a></li>
                             <li><a href='#rif'>Rifles</a></li>
                         </ul>
                     </li>
@@ -74,11 +61,11 @@
      <p id="tes">Las armas de fuego han evolucionado desde su invención en China en el siglo IX, 
         cuando se descubrió la pólvora <br> y se crearon los primeros cañones de mano y lanza-fuegos,
         hasta convertirse en sofisticadas armas modernas. <br>
-        Durante el siglo XIV, llegaron a Europa, dando paso a los primeros <strong style="color: blue;">arcabuces y mosquetes</strong> , 
+        Durante el siglo XIV, llegaron a Europa, dando paso a los primeros <strong style="color: darkblue;">arcabuces y mosquetes</strong> , 
         que se perfeccionaron <br> con la llave de chispa en los siglos XVI-XVIII. 
         La Revolución Industrial permitió la producción en masa y la creación <br> de armas más eficientes, 
-        como los <strong style="color: blue;">revólveres y rifles de repetición</strong>, 
-        mientras que el siglo XX vio el auge de las armas <br> automáticas, <strong style="color: blue;">como el AK-47 y el M16</strong>,
+        como los <strong style="color: darkblue;">revólveres y rifles de repetición</strong>, 
+        mientras que el siglo XX vio el auge de las armas <br> automáticas, <strong style="color: darkblue;">como el AK-47 y el M16</strong>,
         impulsadas por las guerras mundiales. En la actualidad, el desarrollo de materiales <br> más ligeros y
         tecnología avanzada ha dado lugar a armas inteligentes con reconocimiento biométrico y sistemas
         automatizados <br>   de puntería, consolidando su impacto en la guerra, la seguridad y la sociedad 
@@ -89,15 +76,16 @@
    <br>
    
    
-    <div id="pisto">
+    <div id="histo">
         <center><h1>Historia de las Pistolas</h1></center>
         <center><p>Las primeras armas de fuego surgieron en el <strong>siglo XIV</strong>, tras la invención de la pólvora en China y su llegada a Europa. Estas armas iniciales eran conocidas como <strong>bombardas</strong> y consistían en tubos metálicos que disparaban proyectiles mediante la ignición de pólvora.</p></center>
+    </div>
         <br>
         <br>
         <br>
         <div id="pisto">
            <h1>Colt M1911</h1>
-           <img src="imgen/1911.jpg" alt="paco">
+           <img src="imgen/1911.jpg" alt="paco" id="pi">
            <p> <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Estados Unidos <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1911 <br>
            <mark style="background-color: darkred;color: aliceblue;">Calibre:</mark> .45 ACP <br>
@@ -106,7 +94,7 @@
              y potencia la convierten en una de las armas más icónicas de la historia.</p>
         </div>    
         
-    </div>
+    
     <br>
     <br>
     <br>
@@ -115,7 +103,7 @@
     <br>
             <div id="pisto">
                 <h1>Glock 17</h1>
-                <img src="imgen/glock 17.jpg" alt="piupiu">
+                <img src="imgen/glock 17.jpg" alt="piupiu" id="pi">
                 <p> <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Austria <br>
                     <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1982 <br>
                    <mark style="background-color: darkred;color: aliceblue;">Calibre:</mark> 9x19mm parabelium <br>
@@ -132,7 +120,7 @@
     <br>
             <div id="Esco">
                 <h1>Winchester 1987</h1>
-                <img src="imgen/mnym.jpg" alt="my name is john marston">
+                <img src="imgen/mnym.jpg" alt="my name is john marston" id="pi">
                 <p><mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Estados Unidos  <br>
                     <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1897<br>
                    <mark style="background-color: darkred;color: aliceblue;">Calibre:</mark> 12 y 16 <br>
@@ -150,7 +138,7 @@
     <br>
             <div id ="Esco">
                 <h1>Remington 870</h1>
-                <img src="imgen/reming.webp" alt="reminga">
+                <img src="imgen/reming.webp" alt="reminga" id="pi">
                 <p><mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Estados Unidos  <br>
                     <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1950<br>
                    <mark style="background-color: darkred;color: aliceblue;">Calibre:</mark> 12, 16, 28, 20 y .410  <br>
@@ -163,7 +151,7 @@
     <br> <br> <br> <br> <br> <br>
     <div id="Esco">
         <h1>Mossberg 500</h1>
-        <img src="imgen/mossberg500.webp" alt="mossberg500">
+        <img src="imgen/mossberg500.webp" alt="mossberg500" id="pi">
         <p>
             <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Estados Unidos <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1961 <br>
@@ -176,7 +164,7 @@
     <br> <br> <br> <br> <br> <br>
     <div id="Esco">
         <h1>Benelli M4 (M1014)</h1>
-        <img src="imgen/benellim4.webp" alt="benelliM4">
+        <img src="imgen/benellim4.webp" alt="benelliM4" id="pi">
         <p>
             <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Italia <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1999 <br>
@@ -189,7 +177,7 @@
     <br> <br> <br> <br> <br> <br>
     <div id="rif">
         <h1>AK-47</h1>
-        <img src="imgen/ak47.webp" alt="AK-47">
+        <img src="imgen/ak47.webp" alt="AK-47" id="pi">
         <p>
             <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Unión Soviética <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1947 <br>
@@ -202,7 +190,7 @@
     <br> <br> <br> <br> <br> <br>
     <div id="rif">
         <h1>M16</h1>
-        <img src="imgen/m16.jpg" alt="M16">
+        <img src="imgen/m16.jpg" alt="M16" id="pi">
         <p>
             <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Estados Unidos <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1963 <br>
@@ -215,7 +203,7 @@
     <br> <br> <br> <br> <br> <br>
     <div id="rif">
         <h1>Mauser Kar 98k</h1>
-        <img src="imgen/kar98.webp" alt="Mauser Kar 98k">
+        <img src="imgen/kar98.webp" alt="Mauser Kar 98k" id="pi">
         <p>
             <mark style="background-color: darkred; color: aliceblue;">Origen:</mark> Alemania <br>
             <mark style="background-color: darkred; color: aliceblue;">Año de fabricación:</mark> 1935 <br>
@@ -226,5 +214,21 @@
         </p>
     </div>
     <br> <br> <br> <br> <br> <br>
+    <audio id="audo" autoplay loop>
+        <source  src="imgen/Nirvana - Come As You Are (Official Music Video).mp3" type="audio/mpeg">
+    </audio>
+    <footer>
+        <button id="callarm" onclick='toggleAudio()'><img src="imgen/mutear.png"></button>
+        <script>
+            function toggleAudio() {
+            var audio = document.getElementById("audo");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+        </script>
+    </footer>
 </body>
 </html>
