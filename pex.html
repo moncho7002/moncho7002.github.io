@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>te lo dije</title>
+    <link rel="stylesheet" href="css/estitres.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>TE LO ADVERTI</h1>
-    <img src="imgen/pez.gift.gif" alt="pez">
+    <div id="menu">
+        <ul class="prin">
+            <li> <a href="">...</a>
+                <ul>
+                    <li><a href="index.html">Armas</a>
+                    </li>
+                    <li><a href="tiendaairsof.html">Airsoft</a></li>
+                    <li><a href="pex.html">No tocar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+   <center> <h1>TE LO ADVERTI</h1></center>
+    <center><img src="imgen/pez.gift.gif" alt="pez"></center>
+    <audio id="musi" autoplay loop>
+        <source src="imgen/The funkiest of towns [SFM].mp3"  >
+    </audio>
+    <script>
+        
+        document.getElementById('miAudio').volume = 1;
+      </script>
+    <footer>
+        <button id="callarm" onclick='toggleAudio()'><img src="imgen/mutear.png"></button>
+        <script>
+            function toggleAudio() {
+            var audio = document.getElementById("musi");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            }
+        </script>
+    </footer>
 </body>
 </html>
