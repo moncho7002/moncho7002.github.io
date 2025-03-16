@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/detalles.css">
 </head>
 <body>
+      <audio id="audo" autoplay loop>
+        <source  src="imgen/Nirvana - Come As You Are (Official Music Video).mp3" type="audio/mpeg">
+    </audio>
     <header>
         <img src="imgen/realencave.png" alt="encaves">
     </header>
@@ -17,7 +20,7 @@
                     <li><a href="">Armas</a>
                         <ul>
                             <li><a href='#pisto'>Pistolas</a></li>
-                            <li><a href='#Esco'>Escopetas</a></li>
+                            <li  onmouseover="document.getElementById('audo').play()"><a href='#Esco'>Escopetas</a></li>
                             <li><a href='#rif'>Rifles</a></li>
                         </ul>
                     </li>
